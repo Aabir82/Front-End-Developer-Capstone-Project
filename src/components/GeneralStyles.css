@@ -1,0 +1,69 @@
+
+/*Markazi Text Medium size 64pt weight 500*/
+
+  @import url('https://fonts.googleapis.com/css2?family=Markazi+Text:wght@500&display=swap');
+
+/*Markazi Text Regular size 40pt*/
+
+  @import url('https://fonts.googleapis.com/css2?family=Markazi+Text&display=swap');
+
+/*Karla medium 18pt for call to action*/
+
+  @import url('https://fonts.googleapis.com/css2?family=Karla:wght@500&display=swap');
+
+  /*Karla extra bold 20pt for section title*/
+
+  @import url('https://fonts.googleapis.com/css2?family=Karla:wght@800&display=swap');
+
+  /*Karla extra bold 16pt for section categories like This weeks Specials*/
+
+  @import url('https://fonts.googleapis.com/css2?family=Karla:wght@800&display=swap');
+
+  /*Karla bold 18pt for Card Title*/
+ 
+  @import url('https://fonts.googleapis.com/css2?family=Karla:wght@700&display=swap');
+
+/*Paragraph regular 16pt 1.5 line height max 65 characters per line*/
+
+ @import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
+
+/*Highlight text e.g. price medium 16 pt*/
+
+ @import url('https://fonts.googleapis.com/css2?family=Karla:wght@500&display=swap');
+
+/*classnames defined*/
+
+.major-headings {
+    font-family: "Markazi Text",serif;
+    font-size: 64pt;
+    font-style:medium;
+    margin-bottom: 0;;
+}
+
+.sub-titles{
+    font-family: 'Markazi Text',serif;
+    font-size: 40pt;
+    
+}
+
+.paragraph-text {
+    font-family: "karla", sans-serif;
+    font-size: 16pt;
+    line-height:1.5;
+    line-break: calc(c) ;
+}
+
+.button-rounded-corners{
+    border-radius: 16px;
+    border: none;
+    padding: 3px;
+}
+
+.karla-calltoaction {
+    font-family: "karla", sans-serif;
+    font-size: 18pt;
+    font-style: medium;
+}
+
+
+

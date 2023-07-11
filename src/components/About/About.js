@@ -1,3 +1,7 @@
+import "./About.css";
+import "./Abouttablet.css";
+import "./Aboutdesktop.css";
+
 import heroImage from "../../images/restauranfood.jpg";
 import marioAdrianA from "../../images/Mario and Adrian A.jpg"
 import marioAdrianB from "../../images/Mario and Adrian b.jpg"

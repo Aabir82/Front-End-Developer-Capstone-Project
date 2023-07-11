@@ -1,0 +1,52 @@
+@media screen and (max-width:425px){
+    
+    .footer-section {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        padding: 20px 10px;
+    }
+
+.footer-logo-container{
+justify-self: start;
+    grid-column: 1/3;
+}
+
+.doormat-navigation{
+    grid-column: 3/5;
+    justify-self: center;
+}
+
+.footer-contact{
+    grid-column: 1/3;
+    grid-row:2;
+    justify-self: start;
+}
+
+
+.social-media-links{
+    grid-column: 3/5;
+    justify-self: center;
+}
+
+    .footer-logo {
+        height: 150px;
+        margin-top: 20px;
+  
+    }
+    
+   
+    
+    .footer-section  ul {
+        list-style:none ;
+        padding: 0;
+    }
+
+    .footer-section  ul li a {
+        text-decoration: none;
+        color: black;
+        padding: 2px;
+    }
+
+    
+
+}

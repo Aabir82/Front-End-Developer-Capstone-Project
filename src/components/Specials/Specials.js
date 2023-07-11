@@ -1,5 +1,7 @@
 import Cards from "./Cards/Cards";
-
+import "./Specials.css";
+import "./Specialsdesktop.css";
+import "./Specialstablet.css";
 
 function Specials() {
 

@@ -1,0 +1,45 @@
+@media screen and (max-width: 425px) {
+  .test-container {
+    display: flex;
+    flex-flow: row nowrap;
+    grid-column: 1/-1;
+    
+
+    overflow-x: auto;
+    gap: 10px;
+    padding-bottom: 20px;
+  }
+
+  .test-card {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    min-width: 300px;
+    max-width: 300px;
+
+    border: 2px solid lightgray;
+    border-radius: 16px;
+  }
+
+  .test-rating {
+    flex-basis: 100%;
+    padding: 0px 5px;
+  }
+
+  .test-image {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    padding: 0px 5px;
+    border-radius: 50px;
+  }
+
+  .test-name {
+    margin-left: 20px;
+    padding: 0px 5px;
+  }
+
+  .test-container p {
+    padding: 0px 5px;
+  }
+}

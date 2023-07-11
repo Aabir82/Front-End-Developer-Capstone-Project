@@ -1,5 +1,10 @@
 import heroImage from "../../images/restauranfood.jpg";
 
+import "./Hero.css";
+import "./Herodesktop.css";
+import "./Herotablet.css";
+
+
 function Hero() {
   return (
     <div className="hero-section">

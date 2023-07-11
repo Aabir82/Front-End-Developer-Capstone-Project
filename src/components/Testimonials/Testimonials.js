@@ -1,5 +1,9 @@
 import TestCards from "./TestCards/TestCards";
 
+import "./Testimonials.css";
+import "./Testimonialsdesktop.css";
+import "./Testimonialstablet.css";
+
 function Testimonials() {
     return (
         <div className="testimonials-section">

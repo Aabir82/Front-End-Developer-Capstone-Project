@@ -1,6 +1,9 @@
 import cardData from "./cardData";
 import deliveryIcon from "../../../images/food-delivery-icon.png";
 
+import "./Cards.css";
+import "./Cardsdesktop.css";
+import "./Cardstablet.css";
 
 function Cards() {
   const cardArray = cardData.map((card) => {

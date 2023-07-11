@@ -1,8 +1,17 @@
+import "./Footer.css";
+import "./Footerdesktop.css";
+import "./Footertablet.css";
+
+import llFooterIcon from "../../images/Asset 18@4x.png";
+import twitter from "../../images/twitter.svg";
+import facebook from "../../images/facebook.svg";
+import instagram from "../../images/instagram.svg";
+
 function Footer() {
   return (
     <footer className="footer-section">
       <div className="footer-logo-container">
-        <img src="" alt="" className="footer-logo" />
+      <img src={llFooterIcon} alt={llFooterIcon + " footer icon"} className="footer-logo" />
       </div>
 
       <div className="doormat-navigation">
@@ -50,17 +59,17 @@ function Footer() {
         <ul>
           <li>
             <a href="https://www.twitter.com" target="_blank">
-              <img src="" alt="twitter-logo" className="twitter-logo" />
+              <img src={twitter} alt="twitter-logo" className="twitter-logo" />
             </a>
           </li>
           <li>
             <a href="https://www.facebook.com" target="_blank">
-              <img src="" alt="facebook-logo" className="facebook-logo" />
+              <img src={facebook} alt="facebook-logo" className="facebook-logo" />
             </a>
           </li>
           <li>
             <a href="https://www.instagram.com" target="_blank">
-              <img src="" alt="instagram-logo" className="instagram-logo" />
+              <img src={instagram} alt="instagram-logo" className="instagram-logo" />
             </a>
           </li>
         </ul>

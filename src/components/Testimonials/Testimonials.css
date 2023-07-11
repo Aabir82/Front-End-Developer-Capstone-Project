@@ -1,0 +1,17 @@
+@media screen and (max-width: 425px) {
+  .testimonials-section {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 20px 10px;
+    background-color: #edefee;
+  }
+
+  .testimonials-heading {
+    grid-column: 1/-1;
+    grid-row: 1;
+    justify-self: center;
+    font-family: 'Markazi Text',serif;
+    font-size: 40pt;
+    margin: 20px auto;
+  }
+}

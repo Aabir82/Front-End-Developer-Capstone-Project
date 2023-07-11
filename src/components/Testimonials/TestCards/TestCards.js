@@ -1,4 +1,7 @@
 import testData from "./testData";
+import "./TestCards.css";
+import "./TestCardsdesktop.css";
+import "./TestCardstablet.css";
 
 function TestCards() {
   const testimonials = testData.map((test) => (
