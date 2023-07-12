@@ -19,7 +19,7 @@ function Hero() {
           type="button"
           className="button-rounded-corners reserve-table karla-calltoaction"
         >
-          <Link to="/reservations">Reserve a table</Link>
+          <Link to="/reservations" aria-label="Go to Reserve a table functionality on click">Reserve a table</Link>
         </button>
       </div>
 

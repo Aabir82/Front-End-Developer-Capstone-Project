@@ -13,3 +13,4 @@ test("Can the booking form be submitted?", () => {
     fireEvent.click(screen.getByDisplayValue("Make Your reservation"));
 
 });
+

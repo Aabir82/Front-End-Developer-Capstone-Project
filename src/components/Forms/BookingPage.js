@@ -38,6 +38,7 @@ function BookingPage() {
     obj.time = time[0];
     obj.guests = 2;
     obj.occasion = "Birthday";
+    obj.email = "";
     return obj;
   }
 
@@ -110,7 +111,7 @@ function BookingPage() {
   return (
     <div className="booking-section">
       <h2>Book a table</h2>
-      <p className="alert-storage">Please note that local browser storage is being used to save the bookings.</p>
+      <p className="alert-storage">Please note that local browser storage is being used to save the booking data and it needs to be manually cleaned.</p>
       <BookingForm
         availableTimes={availableTimes} //passing the list of available times
         setAvailableTimes={setAvailableTimes}

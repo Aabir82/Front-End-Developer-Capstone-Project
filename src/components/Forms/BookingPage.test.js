@@ -5,6 +5,7 @@ import { render, screen, fireEvent } from "@testing-library/react";
 import { BrowserRouter } from "react-router-dom";
 import BookingPage from "./BookingPage";
 import { dateFromString, dateToString } from "./utils";
+import { toHaveAttribute, toHaveFormValues } from "@testing-library/jest-dom/matchers";
 
 //The commented out tests were tested before moving ahead with development of more features.
 
@@ -44,4 +45,16 @@ test("Is data being read from local storage?", () => {
     fireEvent.click(screen.getByDisplayValue("Make Your reservation"));
     const today = new Date();
     expect(localStorage.getItem(dateToString(today)).time).not.toEqual(availableTimes_test);
-  });
+});
+  
+test("Can the form be submitted without email?", () => {
+  render(
+  <BrowserRouter>
+    <BookingPage />
+  </BrowserRouter>
+);
+  const emailInput = screen.getByPlaceholderText(/someone@example.com/i);
+  expect(emailInput).toHaveAttribute('required');
+  
+
+});

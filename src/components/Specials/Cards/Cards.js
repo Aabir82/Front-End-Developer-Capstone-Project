@@ -18,7 +18,7 @@ function Cards() {
             <h2 className="dish-name">{card.dishName}</h2>
             <h2 className="dish-price">{card.dishPrice}</h2>
             <p className="dish-description">{card.dishDescription}</p>
-            <Link to="/onlineorder" className="order-delivery" >Order delivery<img src={deliveryIcon} alt="delivery icon" className="delivery-icon"/></Link>
+            <Link to="/onlineorder" className="order-delivery" aria-label="Go to menu page on click" >Order delivery<img src={deliveryIcon} alt="delivery icon" className="delivery-icon"/></Link>
             
 
            </div> 

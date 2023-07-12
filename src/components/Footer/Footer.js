@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import "./Footer.css";
 import "./Footerdesktop.css";
 import "./Footertablet.css";
@@ -19,22 +19,22 @@ function Footer() {
         <h2>Navigation</h2>
         <ul>
           <li>
-            <Link to="/home">Home</Link>
+            <NavLink to="/home">Home</NavLink>
           </li>
           <li>
-            <Link to="/about">About</Link>
+            <NavLink to="/about">About</NavLink>
           </li>
           <li>
-            <Link to="/menu">Menu</Link>
+            <NavLink to="/menu">Menu</NavLink>
           </li>
           <li>
-            <Link to="/reservations">Reservations</Link>
+            <NavLink to="/reservations">Reservations</NavLink>
           </li>
           <li>
-            <Link to="onlineorder">Order Online</Link>
+            <NavLink to="onlineorder">Order Online</NavLink>
           </li>
           <li>
-            <Link to="login">Login</Link>
+            <NavLink to="login">Login</NavLink>
           </li>
         </ul>
       </div>
@@ -59,17 +59,17 @@ function Footer() {
         <h2>Social Media</h2>
         <ul>
           <li>
-            <a href="https://www.twitter.com" target="_blank">
+            <a href="https://www.twitter.com" target="_blank" rel="noreferrer">
               <img src={twitter} alt="twitter-logo" className="twitter-logo" />
             </a>
           </li>
           <li>
-            <a href="https://www.facebook.com" target="_blank">
+            <a href="https://www.facebook.com" target="_blank" rel="noreferrer">
               <img src={facebook} alt="facebook-logo" className="facebook-logo" />
             </a>
           </li>
           <li>
-            <a href="https://www.instagram.com" target="_blank">
+            <a href="https://www.instagram.com" target="_blank" rel="noreferrer">
               <img src={instagram} alt="instagram-logo" className="instagram-logo" />
             </a>
           </li>

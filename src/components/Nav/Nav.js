@@ -1,5 +1,5 @@
 import React, { useReducer, useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 import headingLogo from "../../images/Logo.svg";
 import hamburgerIcon from "../../images/🦆 icon _hamburger menu.svg";
@@ -76,27 +76,28 @@ function Nav() {
             style={screenSize(width) === "mobile" ? nav : { display: "flex" }}
           >
             <li>
-              <Link to="/home" onClick={() => setNav({ type: "close" })}>Home</Link>
+              <NavLink to="/home" onClick={() => setNav({ type: "close" })} aria-label="Go to Home page on click">Home</NavLink>
             </li>
             <li>
-              <Link to="/about" onClick={() => setNav({ type: "close" })}>About</Link>
+              <NavLink to="/about" onClick={() => setNav({ type: "close" })} aria-label="Go to about page on click">About</NavLink>
             </li>
             <li>
-              <Link to="/menu" onClick={() => setNav({ type: "close" })}>Menu</Link>
+              <NavLink to="/menu" onClick={() => setNav({ type: "close" })} aria-label="Go to menu page on click">Menu</NavLink>
             </li>
             <li>
-              <Link to="/reservations" onClick={() => setNav({ type: "close" })}>Reservations</Link>
+              <NavLink to="/reservations" onClick={() => setNav({ type: "close" })} aria-label="Go to reservations page on click">Reservations</NavLink>
             </li>
             <li>
-              <Link to="/onlineorder" onClick={() => setNav({ type: "close" })}>Order Online</Link>
+              <NavLink to="/onlineorder" onClick={() => setNav({ type: "close" })} aria-label="Go to online order page on click">Order Online</NavLink>
             </li>
             <li>
-              <Link to="login" onClick={() => setNav({ type: "close" })}>Login</Link>
+              <NavLink to="login" onClick={() => setNav({ type: "close" })} aria-label="Go to login page on click">Login</NavLink>
             </li>
             {screenSize(width) === "mobile" && (
               <li
                 className="menu-close"
                 onClick={() => setNav({ type: "close" })}
+                aria-label="Close menu on click"
               >
                 x
               </li>

@@ -11,7 +11,7 @@ function Specials() {
       <div className="specials-heading">
         <h2 className="sub-titles">Specials</h2>
         <button type="button" className="online-menu button-rounded-corners karla-calltoaction">
-        <Link to="/onlineorder">Order Online</Link>
+        <Link to="/onlineorder" aria-label="Go to menu page on click">Order Online</Link>
         </button>
       </div>
       <div className="cards">
