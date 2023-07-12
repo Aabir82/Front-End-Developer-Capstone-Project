@@ -1,5 +1,5 @@
 import heroImage from "../../images/restauranfood.jpg";
-
+import {Link} from 'react-router-dom';
 import "./Hero.css";
 import "./Herodesktop.css";
 import "./Herotablet.css";
@@ -19,7 +19,7 @@ function Hero() {
           type="button"
           className="button-rounded-corners reserve-table karla-calltoaction"
         >
-          <a href="/reservations">Reserve a table</a>
+          <Link to="/reservations">Reserve a table</Link>
         </button>
       </div>
 

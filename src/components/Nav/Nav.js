@@ -1,4 +1,5 @@
 import React, { useReducer, useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 import headingLogo from "../../images/Logo.svg";
 import hamburgerIcon from "../../images/🦆 icon _hamburger menu.svg";
@@ -75,22 +76,22 @@ function Nav() {
             style={screenSize(width) === "mobile" ? nav : { display: "flex" }}
           >
             <li>
-              <a href="/home">Home</a>
+              <Link to="/home" onClick={() => setNav({ type: "close" })}>Home</Link>
             </li>
             <li>
-              <a href="/about">About</a>
+              <Link to="/about" onClick={() => setNav({ type: "close" })}>About</Link>
             </li>
             <li>
-              <a href="/menu">Menu</a>
+              <Link to="/menu" onClick={() => setNav({ type: "close" })}>Menu</Link>
             </li>
             <li>
-              <a href="/reservations">Reservations</a>
+              <Link to="/reservations" onClick={() => setNav({ type: "close" })}>Reservations</Link>
             </li>
             <li>
-              <a href="/onlineorder">Order Online</a>
+              <Link to="/onlineorder" onClick={() => setNav({ type: "close" })}>Order Online</Link>
             </li>
             <li>
-              <a href="login">Login</a>
+              <Link to="login" onClick={() => setNav({ type: "close" })}>Login</Link>
             </li>
             {screenSize(width) === "mobile" && (
               <li

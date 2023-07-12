@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Cards from "./Cards/Cards";
 import "./Specials.css";
 import "./Specialsdesktop.css";
@@ -10,7 +11,7 @@ function Specials() {
       <div className="specials-heading">
         <h2 className="sub-titles">Specials</h2>
         <button type="button" className="online-menu button-rounded-corners karla-calltoaction">
-          Online Menu
+        <Link to="/onlineorder">Order Online</Link>
         </button>
       </div>
       <div className="cards">

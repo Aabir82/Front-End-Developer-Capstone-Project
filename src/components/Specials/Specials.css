@@ -29,6 +29,11 @@
     height: 50px;
     width:auto;
    }
+
+   .online-menu a {
+    text-decoration: none;
+    color: black;
+  }
   
 
     .specials-heading .sub-titles {
