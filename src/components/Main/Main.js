@@ -9,6 +9,7 @@ import Reservationspage from "../Pages/Reservationspage";
 import Onlineorderpage from "../Pages/Onlineorderpage";
 import Loginpage from "../Pages/Loginpage";
 import Errorpage from "../Pages/Errorpage";
+import ConfirmedBooking from "../ConfirmedBooking/ConfirmedBooking"
 
 
 
@@ -23,7 +24,7 @@ function Main() {
         <Route path="/onlineorder" element={<Onlineorderpage />} />
         <Route path="/login" element={<Loginpage />} />
         <Route path="/*" element={<Errorpage />} />
-        {/* Placeholder for booking confirmation page */}
+        <Route path="/booking-confirmation" element={<ConfirmedBooking/>}/>
       </Routes>
      
   </main>;

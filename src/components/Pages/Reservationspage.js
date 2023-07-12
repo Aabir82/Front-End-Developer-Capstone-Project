@@ -1,12 +1,9 @@
-const setStyle = {
-    display: "flex",
-    justifyContent: "center",
-};
+import BookingPage from "../Forms/BookingPage";
 
 function Reservationspage() {
     return(<>
+        <BookingPage />
         
-        <h1 style={setStyle}>Placeholder for bookings page</h1>
         </>)
 };
 

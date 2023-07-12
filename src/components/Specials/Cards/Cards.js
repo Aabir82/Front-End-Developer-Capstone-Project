@@ -5,6 +5,8 @@ import "./Cards.css";
 import "./Cardsdesktop.css";
 import "./Cardstablet.css";
 
+import { Link } from "react-router-dom";
+
 function Cards() {
   const cardArray = cardData.map((card) => {
     return (
@@ -16,7 +18,7 @@ function Cards() {
             <h2 className="dish-name">{card.dishName}</h2>
             <h2 className="dish-price">{card.dishPrice}</h2>
             <p className="dish-description">{card.dishDescription}</p>
-            <a href="/onlineorder" className="order-delivery" >Order delivery<img src={deliveryIcon} alt="delivery icon" className="delivery-icon"/></a>
+            <Link to="/onlineorder" className="order-delivery" >Order delivery<img src={deliveryIcon} alt="delivery icon" className="delivery-icon"/></Link>
             
 
            </div> 

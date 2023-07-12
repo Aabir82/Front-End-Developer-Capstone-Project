@@ -1,0 +1,134 @@
+.available-times {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  gap: 10px;
+}
+
+.available-times li {
+  list-style-type: none;
+
+  margin: 5px;
+  justify-content: center;
+  flex-basis: auto;
+}
+
+.submit-button {
+  padding: 10px;
+  background-color: #f4ce14;
+}
+
+.booking-form > *,
+.available-times > * {
+  font-family: "karla", sans-serif;
+  font-size: 18pt;
+  font-style: medium;
+}
+
+@media screen and (min-width: 769px) {
+  .booking-form {
+    grid-column: 3/7;
+    grid-row: 2;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .available-times {
+    grid-column: 7/11;
+    grid-row: 2;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    padding: 0px;
+  }
+
+  .no-availability{
+    grid-column: 3/11;
+    grid-row: 3;
+   justify-self: center;
+ 
+    align-self: center;
+    padding: 20px;
+    color: red;
+    font-family: "karla", sans-serif;
+    font-size: 18pt;
+    font-style: medium;
+
+  }
+
+ 
+
+
+}
+
+@media screen and (min-width: 426px) and (max-width: 768px) {
+  .booking-form {
+    grid-column: 1/4;
+    grid-row: 2;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .available-times {
+    grid-column: 5/9;
+    grid-row: 2;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+  }
+
+  .no-availability{
+    grid-column: 1/-1;
+    grid-row: 3;
+   justify-self: center;
+ 
+    align-self: center;
+    padding: 20px;
+    color: red;
+    font-family: "karla", sans-serif;
+    font-size: 18pt;
+    font-style: medium;
+
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .booking-form {
+    grid-column: 1/-1;
+    grid-row: 2;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .available-times {
+    grid-column: 1/-1;
+    grid-row: 3;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    padding: 0px;
+  }
+
+  .no-availability{
+    grid-column: 1/-1;
+    grid-row: 3;
+   justify-self: center;
+ 
+    align-self: center;
+    padding: 20px;
+    color: red;
+    font-family: "karla", sans-serif;
+    font-size: 18pt;
+    font-style: medium;
+
+  }
+}
